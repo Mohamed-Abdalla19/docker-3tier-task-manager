@@ -42,7 +42,7 @@ Database (PostgreSQL)
 
 ### 1️⃣ Clone the repository
 ```bash
-git clone https://github.com/<your-username>/docker-3tier-task-manager.git
+git clone https://github.com/Mohamed-Abdalla19/docker-3tier-task-manager.git
 cd docker-3tier-task-manager
 ```
 
@@ -154,26 +154,16 @@ docker-compose logs -f backend
 
 ```mermaid
 graph TD;
-    A[Frontend (Nginx)] -->|/api requests| B[Backend (Flask API)];
-    B -->|SQL queries| C[(PostgreSQL DB)];
+    A["Frontend (Nginx)"] --> B["Backend (Flask API)"];
+    B --> C[(PostgreSQL DB)];
 ```
-
----
-
-## 📦 Future Improvements
-
-- ✏️ Add "Edit / Update" functionality  
-- 🔐 Implement authentication (JWT or OAuth)  
-- 🚀 Deploy to cloud (AWS / Render / Railway)  
-- 📊 Add monitoring with Prometheus + Grafana  
-
 ---
 
 ## 👨‍💻 Author
 
 **Mohamed Mostafa**  
-DevOps Engineer Trainee  
-📫 [LinkedIn](https://www.linkedin.com/in/mohamed-abdallh-4466b626b) • [GitHub](https://github.com/Mohamed-Abdalla19)
+DevOps Engineer  
+📫 [LinkedIn](www.linkedin.com/in/mohamed-mostafa19) • [GitHub](https://github.com/Mohamed-Abdalla19)
 
 ---
 
@@ -184,5 +174,3 @@ This project demonstrates how to:
 - Orchestrate multiple services using Docker Compose  
 - Manage environment configuration securely with `.env`  
 - Enable internal container networking and healthchecks  
-
-A solid **DevOps portfolio project** showing practical Docker, networking, and system design skills.
